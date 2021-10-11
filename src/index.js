@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Board from './views/Board';
 import reportWebVitals from './reportWebVitals';
+
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Board />
   </React.StrictMode>,
   document.getElementById('root')
 );
