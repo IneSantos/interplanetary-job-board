@@ -6,7 +6,7 @@ interface Props {
     jobs: Card[]
 }
 
-function BoardView(props: Props) {
+const BoardView = (props: Props) => {
     return <BoardPage jobs={data} />
 }
 

@@ -1,4 +1,4 @@
-function JobButton () {
+const JobButton = () => {
     return (
       <button type="submit" className="job-button">
         Expand

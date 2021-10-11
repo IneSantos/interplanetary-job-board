@@ -1,6 +1,6 @@
 import SearchBar from "../../molecules/search-bar/search-bar";
 
-function Header () {
+const Header = () => {
   return (
     <div className="header-wrapper">
         <SearchBar/>

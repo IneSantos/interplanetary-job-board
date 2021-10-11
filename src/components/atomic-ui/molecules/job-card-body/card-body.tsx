@@ -6,7 +6,7 @@ interface Props {
     description: string
 }
 
-function CardBody (props: Props) {
+const CardBody = (props: Props) => {
     const { description } = props;
     return (
     <div className="card-body">

@@ -3,7 +3,7 @@ import CardBody from "../../molecules/job-card-body/card-body";
 import { Card } from "./card-type";
 import "./job-card.css";
 
-function JobCard (props: Card) {
+const JobCard = (props: Card) => {
     const { title, company, location, contract, description } = props;
   return (
     <div className="card-wrapper">

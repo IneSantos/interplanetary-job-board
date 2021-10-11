@@ -9,7 +9,7 @@ interface Props {
     contract: string
 }
 
-function CardHeader (props: Props) {
+const CardHeader = (props: Props) => {
     const { title, company, location, contract } = props;
     return (
     <div className="card-header">

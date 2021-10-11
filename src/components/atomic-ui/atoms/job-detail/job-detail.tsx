@@ -6,7 +6,7 @@ interface Props {
     description: string
 }
 
-function JobDetail (props: Props) {
+const JobDetail = (props: Props) => {
   const { type, description } = props;
 
     switch (type) {

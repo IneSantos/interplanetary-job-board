@@ -8,7 +8,7 @@ interface Props {
     contract: string
 }
 
-function JobDetails (props: Props) {
+const JobDetails = (props: Props) => {
     const { company, location, contract } = props;
     return (
     <div className="job-details">

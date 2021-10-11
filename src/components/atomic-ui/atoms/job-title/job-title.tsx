@@ -3,7 +3,7 @@ interface Props {
     title: string
 }
 
-function JobTitle (props: Props) {
+const JobTitle = (props: Props) => {
   const { title } = props;
   return  <h2 className="title">{title}</h2>;
 }

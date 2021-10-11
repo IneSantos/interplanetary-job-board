@@ -5,7 +5,7 @@ interface Props {
     jobs: Card[]
 }
 
-function Board(props: Props) {
+const Board = (props: Props) => {
     const { jobs } = props;
     return <JobBoard jobs={jobs} />
 }

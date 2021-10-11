@@ -1,6 +1,6 @@
 import './search-button.css'
 
-function SearchButton () {
+const SearchButton = () => {
   return (
     <button type="submit" className="search-button">
       <i className="fas fa-search"></i>

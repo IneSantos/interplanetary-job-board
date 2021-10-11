@@ -4,7 +4,7 @@ interface Props {
     skill: string
 }
 
-function JobSkill (props: Props) {
+const JobSkill = (props: Props) => {
   const { skill } = props;
   return  <span className="skill">{skill}</span>;
 }
