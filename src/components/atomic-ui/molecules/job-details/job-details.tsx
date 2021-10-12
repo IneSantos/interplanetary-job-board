@@ -14,7 +14,7 @@ const JobDetails = (props: Props) => {
     <div className="job-details">
        <JobDetail type={JobDetailsEnum.COMPANY} description={company}/>
        <JobDetail type={JobDetailsEnum.LOCATION} description={location}/>
-       <JobDetail type={JobDetailsEnum.NONE} description={contract}/>
+       <JobDetail type={JobDetailsEnum.CONTRACT} description={contract}/>
     </div>
     );
 }

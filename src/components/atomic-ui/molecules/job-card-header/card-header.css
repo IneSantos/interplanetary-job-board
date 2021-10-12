@@ -1,4 +1,20 @@
 .card-header {
-    display: flex;
-    flex-direction: column;
+    color: #202124;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 18px 0 54px;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+@media (min-width: 50em) {
+    .card-header {
+        border-bottom: 1px solid #dadce0;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 18px 0 8px;
+    }
 }

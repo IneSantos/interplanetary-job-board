@@ -1,6 +1,6 @@
 export type Card = {
     id?: number,
-    title: string,
+    position: string,
     company: string,
     location: string,
     contract: string,

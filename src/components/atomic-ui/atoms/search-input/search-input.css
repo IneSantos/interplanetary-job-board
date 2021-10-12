@@ -1,14 +1,18 @@
 .search-term {
     width: 100%;
-    border: 3px solid #00B4CC;
-    border-right: none;
-    padding: 5px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
+    height: 64px;
     outline: none;
-    color: #9DBFAF;
-  }
+    /* padding-left: 30px; */
+    padding-right: 30px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    display: block;
+    height: 56px;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+}
   
-  .search-term:focus{
-    color: #00B4CC;
-  }
+.search-term:focus{
+  color:  #202124;
+}

@@ -1,13 +1,15 @@
-import { Card } from "../components/atomic-ui/organisms/job-card/card-type";
 import BoardPage from "../components/pages/board";
 import data from "../services/data.json";
+import { getAccordionOptions } from "../utilities/utilities";
+import "normalize.css";
+import "./board.css";
 
-interface Props {
-    jobs: Card[]
-}
+const BoardView = () => {
+    const onChange = () => {
+        console.log("heelo");
+    }
 
-const BoardView = (props: Props) => {
-    return <BoardPage jobs={data} />
+    return <BoardPage jobs={data} accordionOptions={getAccordionOptions(onChange)}/>
 }
 
 export default BoardView;

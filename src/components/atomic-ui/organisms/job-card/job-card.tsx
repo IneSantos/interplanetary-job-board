@@ -4,10 +4,10 @@ import { Card } from "./card-type";
 import "./job-card.css";
 
 const JobCard = (props: Card) => {
-    const { title, company, location, contract, description } = props;
+    const { position, company, location, contract, description } = props;
   return (
     <div className="card-wrapper">
-        <CardHeader title={title} company={company} location={location} contract={contract}/>
+        <CardHeader position={position} company={company} location={location} contract={contract}/>
         <CardBody description={description}/>
     </div>
   );

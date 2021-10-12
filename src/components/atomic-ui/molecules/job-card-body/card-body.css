@@ -1,0 +1,6 @@
+.card-body  {
+    display: flex;
+    flex-direction: column;
+    color: #202124;
+    padding-top: 18px;
+}

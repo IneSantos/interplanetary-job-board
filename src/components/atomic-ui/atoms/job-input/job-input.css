@@ -1,0 +1,18 @@
+.job-term {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 11%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 11%);
+    font-size: 16px;
+    height: 48px;
+    line-height: 20px;
+    padding: 14px 15px;
+
+    -webkit-appearance: none;
+    height: 35px;
+    width: 100%;
+
+
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}

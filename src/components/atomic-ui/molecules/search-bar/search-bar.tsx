@@ -5,8 +5,8 @@ import './search-bar.css';
 const SearchBar = () => {
     return (
     <div className="search">
-        <SearchInput/>
         <SearchButton/>
+        <SearchInput/>
    </div>
    )
 }

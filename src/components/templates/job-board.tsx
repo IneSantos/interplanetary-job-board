@@ -1,25 +1,23 @@
 import Header from "../atomic-ui/organisms/header/header";
-import JobCard from "../atomic-ui/organisms/job-card/job-card";
-import SideBar from "../atomic-ui/organisms/side-nav/side-nav";
+import SideNav from "../atomic-ui/organisms/side-nav/side-nav";
+import JobList from "../atomic-ui/organisms/job-list/job-list";
 import { Card } from "../atomic-ui/organisms/job-card/card-type";
-import "./jobs-board.css"
+import { AccordionCheckboxType } from "../atomic-ui/molecules/accordion-checkbox/accordion-checkbox-type";
 
 interface Props {
-    jobs: Card[]
+    jobs: Card[],
+    accordionOptions: AccordionCheckboxType[]
 }
 
 const JobBoard = (props: Props) => {
-  const { jobs } = props;
+  const { jobs, accordionOptions } = props;
   return (
       <div className="board">
+        <div className="banner"></div>
         <Header/>
-        <div>
-          <SideBar/>
-          <div className="jobs-list">
-              {jobs.map((job) => {
-                  return <JobCard key={job.id} title={job.title} company={job.company} location={job.location} contract={job.contract} description={job.description}/>
-              })}
-          </div>
+        <div className="board-body">
+          <SideNav accordionOptions={accordionOptions}/>
+          <JobList jobs={jobs}/>
         </div>
     </div>
   );

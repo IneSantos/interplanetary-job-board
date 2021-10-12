@@ -1,11 +1,34 @@
 .card-wrapper {
-    width: 70vw;
-    background-color: #fff;
+    background: #fff;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+
     padding: 1.5rem 2rem;
     border-radius: 5px;
     margin: 1.3rem 0;
     position: relative;
     box-shadow: 0 4px 6px 4px rgb(91 164 164 / 20%);
+}
+
+@media (min-width: 50em) {
+    .card-wrapper {
+        border: 1px solid #dadce0;
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 50em) {
+    .card-wrapper:hover {
+        border-color: transparent;
+        -webkit-box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+        box-shadow: 0 1px 3px 0 rgb(60 64 67 / 30%), 0 4px 8px 3px rgb(60 64 67 / 15%);
+    }
 }

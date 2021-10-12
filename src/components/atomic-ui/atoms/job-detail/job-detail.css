@@ -1,0 +1,22 @@
+@import "../../../../theme-variables.css";
+
+.icon {
+    align-self: center;
+    display: block;
+    color: var(--light-grey);
+    margin-right: 5px;
+}
+
+.job-detail {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+@media (min-width: 50em){
+    .job-detail:not(:last-child) {
+        margin-right: 12px;
+    }
+}

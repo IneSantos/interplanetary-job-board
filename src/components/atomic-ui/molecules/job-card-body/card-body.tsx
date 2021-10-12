@@ -1,5 +1,5 @@
 import JobDescription from "../../atoms/job-description/job-description";
-import JobButton from "../../atoms/job-button/job-button";
+import JobButton from "../../atoms/job-action/job-action";
 import "./card-body.css"
 
 interface Props {
