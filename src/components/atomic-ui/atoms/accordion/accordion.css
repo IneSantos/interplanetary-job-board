@@ -1,26 +1,21 @@
 .accordion {
-    /* max-width: 400px; */
-    /* box-shadow: 0 0 10px rgb(0 0 0 / 20%); */
-    /* overflow: hidden; */
-    /* background-color: white; */
     border-bottom: 1px solid #e8eaed;
     padding: 20px 0;
-    /* transition: background-color 0.1s; */
 }
 
 .accordion-label{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: black;
     font-weight: bold;
     position: relative;
     text-transform: capitalize;
     cursor: pointer;
 }
-/* 
-.accordion:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-} */
 
 .accordion-content{
     background: white;

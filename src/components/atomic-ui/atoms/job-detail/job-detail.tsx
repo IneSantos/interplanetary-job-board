@@ -7,7 +7,7 @@ interface Props {
 }
 
 const JobDetail = (props: Props) => {
-  const { type, description } = props;
+    const { type, description } = props;
 
     switch (type) {
         case JobDetailsEnum.COMPANY:

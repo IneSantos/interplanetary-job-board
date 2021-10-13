@@ -5,20 +5,25 @@ import { Card } from "../atomic-ui/organisms/job-card/card-type";
 import { AccordionCheckboxType } from "../atomic-ui/molecules/accordion-checkbox/accordion-checkbox-type";
 
 interface Props {
-    jobs: Card[],
-    accordionOptions: AccordionCheckboxType[]
+  jobs: Card[],
+  clearFilters: () => void,
+  accordionOptions: AccordionCheckboxType[],
+  searchInput: string,
+  handleSearch: (e: { target: HTMLInputElement }) => void
 }
 
 const JobBoard = (props: Props) => {
-  const { jobs, accordionOptions } = props;
+  const { jobs, clearFilters, accordionOptions, searchInput, handleSearch } = props;
   return (
-      <div className="board">
+    <div className="board">
+      <header>
         <div className="banner"></div>
-        <Header/>
-        <div className="board-body">
-          <SideNav accordionOptions={accordionOptions}/>
-          <JobList jobs={jobs}/>
-        </div>
+        <Header searchInput={searchInput} handleSearch={handleSearch} />
+      </header>
+      <div className="board-body">
+        <SideNav clearFilters={clearFilters} accordionOptions={accordionOptions} searchInput={searchInput} handleSearch={handleSearch} />
+        <JobList jobs={jobs} />
+      </div>
     </div>
   );
 }

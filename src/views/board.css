@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import "../theme-variables.css";
 
-/* *,
-*::before,
-*::after {
+
+html, body {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-} */
+  padding:0;
+  height: 100%;
+}
+
+div { 
+  margin:0;
+  padding:0;
+}
 
 html {
   font-size: 15px;
@@ -35,4 +39,12 @@ h2 {
         font-size: 24px;
         line-height: 30px;
     }
+}
+
+#root {
+  height: 100%;
+}
+
+.board {
+  height: 100%;
 }

@@ -8,11 +8,19 @@ interface Props {
 
 const JobList = (props: Props) => {
     const { jobs } = props;
+
+    const hasResults = jobs.length > 0;
     return (
         <div className="jobs-list">
             {jobs.map((job) => {
-                return <JobCard key={job.id} position={job.position} company={job.company} location={job.location} contract={job.contract} description={job.description}/>
+                return <JobCard key={job.id} position={job.position} company={job.company} location={job.location} contract={job.contract} description={job.description} />
             })}
+            {!hasResults &&
+                <div className="empty-list">
+                    <h3>No results.</h3>
+                    <span>Search again or try removing filters.</span>
+                </div>
+            }
         </div>
     )
 }

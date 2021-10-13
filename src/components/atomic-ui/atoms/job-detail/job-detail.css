@@ -1,18 +1,28 @@
 @import "../../../../theme-variables.css";
 
 .icon {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     display: block;
     color: var(--light-grey);
     margin-right: 5px;
 }
 
 .job-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 600;
     font-size: 14px;
     vertical-align: middle;
+}
+
+.job-detail:not(:last-child) {
+    margin-right: 10px;
 }
 
 @media (min-width: 50em){

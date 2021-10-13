@@ -12,10 +12,10 @@ interface Props {
 const CardHeader = (props: Props) => {
     const { position, company, location, contract } = props;
     return (
-    <div className="card-header">
-       <JobTitle position={position}/>
-       <JobDetails company={company} location={location} contract={contract}/>
-    </div>
+        <div className="card-header">
+            <JobTitle position={position} />
+            <JobDetails company={company} location={location} contract={contract} />
+        </div>
     );
 }
 

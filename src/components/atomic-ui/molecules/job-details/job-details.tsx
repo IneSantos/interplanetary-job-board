@@ -11,11 +11,11 @@ interface Props {
 const JobDetails = (props: Props) => {
     const { company, location, contract } = props;
     return (
-    <div className="job-details">
-       <JobDetail type={JobDetailsEnum.COMPANY} description={company}/>
-       <JobDetail type={JobDetailsEnum.LOCATION} description={location}/>
-       <JobDetail type={JobDetailsEnum.CONTRACT} description={contract}/>
-    </div>
+        <div className="job-details">
+            <JobDetail type={JobDetailsEnum.COMPANY} description={company} />
+            <JobDetail type={JobDetailsEnum.LOCATION} description={location} />
+            <JobDetail type={JobDetailsEnum.CONTRACT} description={contract} />
+        </div>
     );
 }
 

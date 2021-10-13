@@ -9,10 +9,10 @@ interface Props {
 const CardBody = (props: Props) => {
     const { description } = props;
     return (
-    <div className="card-body">
-       <JobDescription description={description}/>
-       <JobButton/>
-    </div>
+        <div className="card-body">
+            <JobDescription description={description} />
+            <JobButton />
+        </div>
     );
 }
 

@@ -2,18 +2,18 @@ import { useState } from "react";
 import { CheckboxType } from "./checkbox-type"
 import "./checkbox.css";
 
-const Checkbox = ({ label, onChange }: CheckboxType) => {
+const Checkbox = ({ label, parent, onChange }: CheckboxType) => {
     const [value, setValue] = useState(false);
 
-    const updateValue = () => {
+    const updateValue = (e) => {
         setValue(prevState => !prevState);
-        onChange();
+        onChange(e);
     }
 
     return (
         <label>
             <span className="checkbox">
-                <input className="checkbox-input"  type="checkbox" checked={value} onChange={updateValue} />
+                <input className="checkbox-input" type="checkbox" name={label} data-parent={parent} checked={value} onChange={updateValue} />
                 {label}
             </span>
         </label>

@@ -5,7 +5,7 @@ interface Props {
 
 const JobTitle = (props: Props) => {
   const { position } = props;
-  return  <h2 className="title">{position}</h2>;
+  return <h2 className="title">{position}</h2>;
 }
 
 export default JobTitle;

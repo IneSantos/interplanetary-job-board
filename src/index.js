@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Board from './views/board.tsx';
 import reportWebVitals from './reportWebVitals';
-
-import '@fortawesome/fontawesome-svg-core/styles.css'
+// import '@fortawesome/fontawesome-svg-core/styles.css'
 
 ReactDOM.render(
   <React.StrictMode>
