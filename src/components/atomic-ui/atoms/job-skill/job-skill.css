@@ -1,0 +1,13 @@
+@import "../../../../theme-variables.css";
+
+.skill {
+    background-color: var(--light-grey);
+    color: var(--background-color);
+    font-weight: 700;
+    padding: .25rem .5rem;
+    border-radius: 5px;
+}
+
+.skill:not(:last-child) {
+    margin-right: 1rem;
+}

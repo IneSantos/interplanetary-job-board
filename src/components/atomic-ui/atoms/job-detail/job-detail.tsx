@@ -11,10 +11,8 @@ const JobDetail = (props: Props) => {
 
     switch (type) {
         case JobDetailsEnum.COMPANY:
-            //@todo: add ICON
             return <div className="job-detail job-detail-company"><i className="fas fa-building icon"></i><span>{description}</span></div>;
         case JobDetailsEnum.LOCATION:
-            //@todo: add ICON
             return <div className="job-detail job-detail-location"><i className="fas fa-map-marker-alt icon"></i><span>{description}</span></div>;
         case JobDetailsEnum.CONTRACT:
             return <div className="job-detail job-detail-contract"><i className="fas fa-file-signature icon"></i><span>{description}</span></div>;

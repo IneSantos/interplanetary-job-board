@@ -13,7 +13,7 @@ const JobList = (props: Props) => {
     return (
         <div className="jobs-list">
             {jobs.map((job) => {
-                return <JobCard key={job.id} position={job.position} company={job.company} location={job.location} contract={job.contract} description={job.description} />
+                return <JobCard key={job.id} position={job.position} company={job.company} location={job.location} contract={job.contract} skills={job.skills} description={job.description} />
             })}
             {!hasResults &&
                 <div className="empty-list">

@@ -8,7 +8,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
+    background-color: var(--primary-color);
     text-align: center;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -41,7 +41,7 @@
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: var(--letter-color-black);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -99,13 +99,13 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 30px;
-    color: #1967d2;
+    color: var(--links-blue);
 }
 
 
 @media (min-width: 50em) {
     .side-nav  {
-        background-color: #fff;
+        background-color: var(--primary-color);
         padding: 15px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -117,7 +117,7 @@
         -ms-flex-negative: 0;
         flex-shrink: 0;
         width: 372px;
-        border-right: 1px solid #e8eaed;
+        border-right: 1px solid var(--bright-border-color);
         bottom: 0;
         top: 0;
         left: 0;
@@ -169,7 +169,7 @@
 .filter-section > a {
     margin-top: 8px;
     cursor: pointer;
-    color: #1967d2;
+    color: var(--links-blue);
     background: transparent;
     border: 0;
     cursor: pointer;

@@ -1,7 +1,9 @@
+@import "../../../../theme-variables.css";
+
 .job-apply {
     margin-top: 20px;
     cursor: pointer;
-    color: #1967d2;
+    color: var(--links-blue);
     background: transparent;
     border: 0;
     cursor: pointer;

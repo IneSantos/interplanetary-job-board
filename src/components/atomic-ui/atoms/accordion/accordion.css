@@ -1,5 +1,7 @@
+@import "../../../../theme-variables.css";
+
 .accordion {
-    border-bottom: 1px solid #e8eaed;
+    border-bottom: 1px solid var(--bright-border-color);
     padding: 20px 0;
 }
 
@@ -10,7 +12,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    color: black;
+    color: var(--letter-color-black);
     font-weight: bold;
     position: relative;
     text-transform: capitalize;
@@ -18,7 +20,7 @@
 }
 
 .accordion-content{
-    background: white;
+    background: var(--primary-color);
     line-height: 1.6;
     font-size: 0.85em;
     display: none;

@@ -4,5 +4,6 @@ export type Card = {
     company: string,
     location: string,
     contract: string,
+    skills: [],
     description: string
 }

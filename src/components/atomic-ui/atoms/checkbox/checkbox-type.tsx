@@ -1,5 +1,6 @@
 export type CheckboxType =  {
     label: string,
     onChange: (e) => {},
-    parent: string
+    parent: string,
+    clearFilter: boolean
 }

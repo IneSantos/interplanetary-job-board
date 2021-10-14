@@ -9,6 +9,7 @@ const BoardView = () => {
     const [input, setInput] = useState("");
     const [jobs, setJobs] = useState(data);
     const [filterKeywords, setfilterKeywords] = useState(getAccordionFilters);
+    const [clearFilterActive, setClearFilter] = useState(false);
 
     const onSelectFilterOption = (e) => {
         const optionSelected = e.target.getAttribute("data-parent");
@@ -22,6 +23,7 @@ const BoardView = () => {
             const newKeys = filterKeywords.get(optionSelected).filter((key) => key !== keyword);
             setfilterKeywords(new Map(filterKeywords.set(optionSelected, [...newKeys])));
         }
+
     }
 
     const handleSearch = (e) => {
@@ -32,7 +34,12 @@ const BoardView = () => {
 
     const clearFilters = () => {
         setfilterKeywords(new Map(getAccordionFilters()));
+        setClearFilter(true);
     };
+
+    useEffect(() => {
+        setClearFilter(false);
+    }, []);
 
 
     useEffect(() => {
@@ -44,7 +51,7 @@ const BoardView = () => {
 
     }, [filterKeywords]);
 
-    return <BoardPage jobs={jobs} clearFilters={clearFilters} accordionOptions={getAccordionOptions(onSelectFilterOption)} handleSearch={handleSearch} searchInput={input} />
+    return <BoardPage jobs={jobs} clearFilters={clearFilters} accordionOptions={getAccordionOptions(onSelectFilterOption, clearFilterActive)} handleSearch={handleSearch} searchInput={input} />
 }
 
 export default BoardView;

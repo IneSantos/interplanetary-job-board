@@ -1,14 +1,19 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { CheckboxType } from "./checkbox-type"
 import "./checkbox.css";
 
-const Checkbox = ({ label, parent, onChange }: CheckboxType) => {
+const Checkbox = ({ label, clearFilter, parent, onChange }: CheckboxType) => {
     const [value, setValue] = useState(false);
 
     const updateValue = (e) => {
         setValue(prevState => !prevState);
         onChange(e);
     }
+
+    useEffect(() => {
+       if(clearFilter) setValue(false);
+    }, [clearFilter])
 
     return (
         <label>

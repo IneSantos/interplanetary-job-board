@@ -1,5 +1,7 @@
+@import "../../../../theme-variables.css";
+
 .job-term {
-    border: 1px solid #dadce0;
+    border: 1px solid var(--card-border-color);
     border-radius: 4px;
     -webkit-box-shadow: 0 2px 4px rgb(0 0 0 / 11%);
     box-shadow: 0 2px 4px rgb(0 0 0 / 11%);

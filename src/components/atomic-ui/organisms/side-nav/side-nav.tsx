@@ -39,7 +39,7 @@ const SideNav = ({ searchInput, handleSearch, clearFilters, accordionOptions }: 
                     </div>
                     {
                         accordionOptions.map((option) => {
-                            return <AccordionCheckbox key={option.id} id={option.id} label={option.label} options={option.options} />
+                            return <AccordionCheckbox key={option.id} id={option.id} label={option.label} clearFilter={option.clearFilter} options={option.options} />
                         })
                     }
                 </div>

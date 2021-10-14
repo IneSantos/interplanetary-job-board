@@ -1,6 +1,8 @@
+@import "../../../../theme-variables.css";
+
 .checkbox-input {
     display: inline-block;
-    fill: #80868b;
+    fill: var(--input-green);
     -ms-flex-negative: 0;
     flex-shrink: 0;
     height: 20px;
