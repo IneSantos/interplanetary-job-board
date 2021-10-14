@@ -34,7 +34,9 @@ const BoardView = () => {
 
     const clearFilters = () => {
         setfilterKeywords(new Map(getAccordionFilters()));
-        setClearFilter(true);
+
+        if ([...filterKeywords.values()].flat().length > 0) 
+            setClearFilter(true);
     };
 
     useEffect(() => {
@@ -46,8 +48,10 @@ const BoardView = () => {
         const filteredOptions = getFilteredJobsByOption(filterKeywords);
         setJobs(filteredOptions);
 
-        if ([...filterKeywords.values()].flat().length === 0)
+        if ([...filterKeywords.values()].flat().length === 0){
             setJobs(data);
+            setClearFilter(false);
+        }
 
     }, [filterKeywords]);
 
