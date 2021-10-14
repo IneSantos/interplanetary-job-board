@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobBoard atom tests JobBoard component render with no lists 1`] = `
+<div
+  class="board"
+>
+  <header>
+    <div
+      class="banner"
+    />
+    <div
+      class="header-wrapper"
+    >
+      <div
+        class="search"
+      >
+        <button
+          class="search-button"
+          type="submit"
+        >
+          <i
+            class="fas fa-search"
+          />
+        </button>
+        <input
+          class="search-term"
+          placeholder="What are you looking for?"
+          type="text"
+          value="This is a search input"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    class="board-body"
+  >
+    <div
+      class="side-nav "
+    >
+      <div
+        class="hamburger "
+      >
+        <span
+          class="bar"
+        />
+        <span
+          class="bar"
+        />
+        <span
+          class="bar"
+        />
+      </div>
+      <div
+        class="side-nav-content"
+      >
+        <div
+          class="filter-section"
+        >
+          <h3>
+            What do you want to do?
+          </h3>
+          <a>
+            Clear Filters
+          </a>
+          <input
+            class="job-term"
+            placeholder="Software engineering, Design, Sales"
+            type="text"
+            value="This is a search input"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="side-nav-overlay "
+    />
+    <a
+      class="edit-filters"
+    >
+      Edit Filters
+    </a>
+    <div
+      class="jobs-list"
+    >
+      <div
+        class="empty-list"
+      >
+        <h3>
+          No results.
+        </h3>
+        <span>
+          Search again or try removing filters.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

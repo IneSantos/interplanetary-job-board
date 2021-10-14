@@ -15,7 +15,7 @@ const Accordion = ({ id, label, content }: Props) => {
     return (
         <div className="accordion">
             <div>
-                <input type="checkbox" id={id} className="accordion-input" defaultChecked={checked} onChange={() => setIsChecked(!checked)} />
+                <input type="checkbox" id={id} className="accordion-input" defaultChecked={checked} onChange={() => setIsChecked(!checked)}/>
                 <label htmlFor={id} className="accordion-label">{label}<i className={`fas ${icon}`}></i></label>
                 <div className="accordion-content">
                     {content}

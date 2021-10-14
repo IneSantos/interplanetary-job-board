@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox atom tests Checkbox component render 1`] = `
+<label>
+  <span
+    class="checkbox"
+  >
+    <input
+      class="checkbox-input"
+      data-parent="checkbox"
+      name="checkbox"
+      type="checkbox"
+    />
+    checkbox
+  </span>
+</label>
+`;

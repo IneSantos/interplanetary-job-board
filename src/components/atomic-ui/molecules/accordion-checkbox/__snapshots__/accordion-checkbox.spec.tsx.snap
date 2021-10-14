@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionCheckbox atom tests AccordionCheckbox component render 1`] = `
+<div
+  class="accordion-checkbox"
+>
+  <div
+    class="accordion"
+  >
+    <div>
+      <input
+        class="accordion-input"
+        id="accordion1"
+        type="checkbox"
+      />
+      <label
+        class="accordion-label"
+        for="accordion1"
+      >
+        accordion1
+        <i
+          class="fas fa-chevron-down"
+        />
+      </label>
+      <div
+        class="accordion-content"
+      >
+        <ul
+          class="options-list"
+        >
+           
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

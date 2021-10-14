@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobList atom tests JobList component render 1`] = `
+<div
+  class="jobs-list"
+>
+  <div
+    class="empty-list"
+  >
+    <h3>
+      No results.
+    </h3>
+    <span>
+      Search again or try removing filters.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`JobList atom tests JobList component render with no list 1`] = `
+<div
+  class="jobs-list"
+>
+  <div
+    class="empty-list"
+  >
+    <h3>
+      No results.
+    </h3>
+    <span>
+      Search again or try removing filters.
+    </span>
+  </div>
+</div>
+`;

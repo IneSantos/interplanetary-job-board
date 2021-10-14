@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobDescription atom tests JobDescription component render COMPANY 1`] = `
+<div
+  class="job-detail job-detail-company"
+>
+  <i
+    class="fas fa-building icon"
+  />
+  <span>
+    This is a description
+  </span>
+</div>
+`;
+
+exports[`JobDescription atom tests JobDescription component render CONTRACT 1`] = `
+<div
+  class="job-detail job-detail-contract"
+>
+  <i
+    class="fas fa-file-signature icon"
+  />
+  <span>
+    This is a description
+  </span>
+</div>
+`;
+
+exports[`JobDescription atom tests JobDescription component render LOCATION 1`] = `
+<div
+  class="job-detail job-detail-location"
+>
+  <i
+    class="fas fa-map-marker-alt icon"
+  />
+  <span>
+    This is a description
+  </span>
+</div>
+`;
+
+exports[`JobDescription atom tests JobDescription component render NONE 1`] = `
+<div
+  class="job-detail job-detail-none"
+>
+  <span>
+    This is a description
+  </span>
+</div>
+`;

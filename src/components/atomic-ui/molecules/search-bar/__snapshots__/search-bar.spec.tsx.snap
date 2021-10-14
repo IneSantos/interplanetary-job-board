@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar atom tests SearchBar component render 1`] = `
+<div
+  class="search"
+>
+  <button
+    class="search-button"
+    type="submit"
+  >
+    <i
+      class="fas fa-search"
+    />
+  </button>
+  <input
+    class="search-term"
+    placeholder="What are you looking for?"
+    type="text"
+    value="This is a input"
+  />
+</div>
+`;

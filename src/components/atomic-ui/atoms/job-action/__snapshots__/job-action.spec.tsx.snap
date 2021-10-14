@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobAction atom tests JobAction component render 1`] = `
+<a
+  class="job-apply"
+  href=""
+>
+  Apply
+</a>
+`;

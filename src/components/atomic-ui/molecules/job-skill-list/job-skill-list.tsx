@@ -2,7 +2,7 @@ import JobSkill from "../../atoms/job-skill/job-skill";
 import "./job-skill-list.css"
 
 interface Props {
-  skills: []
+  skills: string[]
 }
 
 const SkillList = ({skills}: Props) => {

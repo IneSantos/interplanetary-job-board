@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNav atom tests SideNav component render with no list 1`] = `
+<div
+  class="side-nav "
+>
+  <div
+    class="hamburger "
+  >
+    <span
+      class="bar"
+    />
+    <span
+      class="bar"
+    />
+    <span
+      class="bar"
+    />
+  </div>
+  <div
+    class="side-nav-content"
+  >
+    <div
+      class="filter-section"
+    >
+      <h3>
+        What do you want to do?
+      </h3>
+      <a>
+        Clear Filters
+      </a>
+      <input
+        class="job-term"
+        placeholder="Software engineering, Design, Sales"
+        type="text"
+        value="This is a search input"
+      />
+    </div>
+  </div>
+</div>
+`;

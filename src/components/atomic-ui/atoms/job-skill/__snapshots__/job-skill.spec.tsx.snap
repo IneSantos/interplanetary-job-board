@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobSkill atom tests JobSkill component render 1`] = `
+<span
+  class="skill"
+>
+  This is a skill
+</span>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardBody atom tests CardBody component render 1`] = `
+<div
+  class="card-body"
+>
+  <div
+    class="description"
+  >
+    This is a description
+  </div>
+  <div
+    class="skill-list"
+  />
+  <a
+    class="job-apply"
+    href=""
+  >
+    Apply
+  </a>
+</div>
+`;

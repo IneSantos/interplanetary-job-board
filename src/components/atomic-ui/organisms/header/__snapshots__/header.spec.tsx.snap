@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header atom tests Header component render 1`] = `
+<div
+  class="header-wrapper"
+>
+  <div
+    class="search"
+  >
+    <button
+      class="search-button"
+      type="submit"
+    >
+      <i
+        class="fas fa-search"
+      />
+    </button>
+    <input
+      class="search-term"
+      placeholder="What are you looking for?"
+      type="text"
+      value="This is an input"
+    />
+  </div>
+</div>
+`;
