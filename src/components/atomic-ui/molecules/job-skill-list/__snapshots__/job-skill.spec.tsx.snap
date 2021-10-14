@@ -3,5 +3,11 @@
 exports[`SkillList atom tests SkillList component render 1`] = `
 <div
   class="skill-list"
-/>
+>
+  <span
+    class="skill"
+  >
+    This is a skill
+  </span>
+</div>
 `;

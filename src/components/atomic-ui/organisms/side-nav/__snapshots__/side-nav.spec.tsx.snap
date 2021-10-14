@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SideNav atom tests SideNav component render with no list 1`] = `
+exports[`SideNav atom tests SideNav component render with no lists 1`] = `
 <div
   class="side-nav "
 >

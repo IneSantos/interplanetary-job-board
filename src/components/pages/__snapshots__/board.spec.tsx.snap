@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Board atom tests Board component render with no list 1`] = `
+exports[`Board atom tests Board component render with no lists 1`] = `
 <div
   class="board"
 >
