@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Board from './views/board';
+import Board from './views/Board.tsx';
 import reportWebVitals from './reportWebVitals';
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 
