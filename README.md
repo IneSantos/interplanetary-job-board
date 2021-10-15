@@ -6,7 +6,7 @@ This project consists of a web application that allows candidates to search and 
  
  It's a react bases solution that allows for users to:
  
--
+
  - Scroll through a list of job cards with the job details;
  
  - Search field by job title or company name;
