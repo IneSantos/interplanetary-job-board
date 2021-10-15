@@ -4,7 +4,7 @@ import JobButton from "../../atoms/job-action/job-action";
 import "./card-body.css"
 
 interface Props {
-    skills: [], 
+    skills: string[], 
     description: string
 }
 
